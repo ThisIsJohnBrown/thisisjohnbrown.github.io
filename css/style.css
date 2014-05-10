@@ -23,7 +23,7 @@ h3 {
   font-weight: 600;
   font-size: 25px;
   text-align: center;
-  margin-bottom:0px;
+  margin-bottom:10px;
 }
 
 p {
@@ -57,9 +57,10 @@ a:hover {
 }
 
 ul {
-  width:245px;
+  width: 50%;
   margin: 0;
   padding: 0;
+  float: left;
 }
 
 .left {
@@ -82,8 +83,11 @@ ul {
 }
 
 li {
-  text-align: center;
+  text-align: right;
   list-style: none;
   color: #A3906D;
-  
+}
+
+.right li {
+  text-align: left;
 }

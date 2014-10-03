@@ -17,7 +17,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
 	<link href='/css/style.css' rel='stylesheet' type='text/css'>
-
+	
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -29,15 +29,26 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
+	  
+	  document.addEventListener("load", function() {
+	  	var iframe = document.getElementbyId('background-iframe');
+	  	console.log(iframe);
+	  	//.setAttribute('src', 'http://asfwef');
+	  });
+	  document.onload = function() {
+	  	alert('a');
+	  }
 
 	</script>
 
 	</head>
 
 	<body>
-
+		<div class="background">
+			<div class="background-overlay">&nbsp;</div>
+			<iframe id="background-iframe" src="http://www.uncontext.com/literature/one-hundred-points" width="100%" height="100%"></iframe>
+		</div>
 		<div id="container">
-
 			<h1>This Is JohnBrown™</h1>
 			
 			<h2>"Holy shit, I love programming."</h2>
@@ -78,6 +89,10 @@
 
 		</div>
 
+
+
 	</body>
+
+
 
 </html>

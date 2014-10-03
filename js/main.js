@@ -1,3 +1,4 @@
 $(document).ready(function() {
-	console.log("Hello!");
+	$('iframe').attr('src', 'http://uncontext.com');
+  alert('a');
 });
